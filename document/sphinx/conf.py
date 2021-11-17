@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'HOS'
-copyright = '2021, Project HOS'
-author = 'Project HOS'
+project = 'Hyper Operating System'
+copyright = '1998-2007 by Project HOS'
+author = 'Project HOS http://sourceforge.jp/projects/hos/'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,6 +28,10 @@ author = 'Project HOS'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'recommonmark',
+    'sphinx_markdown_tables',
+#    'sphinxcontrib.blockdiag',
+#    'sphinxcontrib.actdiag',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -57,3 +61,5 @@ html_theme = 'default'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+source_suffix = ['.rst', '.md']
